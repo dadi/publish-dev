@@ -1,0 +1,50 @@
+{
+  "app": {
+    "name": "DADI Publish Dev",
+    "publisher": "DADI"
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 3001
+  },
+  "apis": [
+    {
+      "name": "DADI Publish - Dev API",
+      "host": "http://127.0.0.1",
+      "port": 9999,
+      "version": "1.0",
+      "database": "cloud",
+      "credentials": {
+        "clientId": "api-client",
+        "secret": "client-secret"
+      },
+      "menu": [
+        {
+          "collections": [
+            "images",
+            "pages",
+            "team",
+            "partners"
+          ],
+          "title": "Content"
+        },
+        {
+          "collections": [
+            "categories",
+            "sub-categories",
+            "milestones"
+          ],
+          "title": "Taxonomy"
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "enabled": false
+  },
+  "publicUrl": {
+    "host": "127.0.0.1",
+    "port": 3001,
+    "protocol": "http"
+  }
+}
