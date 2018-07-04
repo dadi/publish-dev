@@ -7,12 +7,12 @@
 FROM node:8.11
 MAINTAINER Jim Lambie <jl@dadi.co>
 
-#ADD package.json /tmp/package.json
-#RUN cd /tmp && npm install
-RUN npm install
+ADD package.json /tmp/package.json
+RUN cd /tmp && npm install
+#RUN npm install
 
-#RUN mkdir -p /dadi/publish && cp -a /tmp/node_modules /dadi/publish
-RUN mkdir -p /dadi/publish
+RUN mkdir -p /dadi/publish && cp -a /tmp/node_modules /dadi/publish
+#RUN mkdir -p /dadi/publish
 
 WORKDIR /dadi/publish
 ADD . /dadi/publish
