@@ -32,7 +32,7 @@
 
 1. Access Publish on http://127.0.0.1:3001
 
-1. Access API on http://127.0.0.1:9999. The following user is created by default:
+1. Access API on http://127.0.0.1:9998. The following user is created by default:
 
     ```json
     {

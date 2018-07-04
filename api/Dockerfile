@@ -16,6 +16,6 @@ RUN mkdir -p /dadi/api && cp -a /tmp/node_modules /dadi/api
 WORKDIR /dadi/api
 ADD . /dadi/api
 
-EXPOSE 9999
+EXPOSE 9998
 
 CMD ["node", "index.js"]
