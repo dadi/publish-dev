@@ -1,0 +1,306 @@
+{
+  "fields": {
+    "title": {
+      "type": "String",
+      "required": true,
+      "label": "Title",
+      "publish": {
+        "section": "Details",
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "slug": {
+      "type": "String",
+      "required": false,
+      "label": "Slug",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      }
+    },
+    "author": {
+      "type": "Reference",
+      "required": false,
+      "label": "Author",
+      "publish": {
+        "section": "Details",
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      },
+      "settings": {
+        "collection": "team"
+      }
+    },
+    "published": {
+      "type": "Boolean",
+      "required": false,
+      "label": "Published",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "excerpt": {
+      "type": "String",
+      "required": false,
+      "label": "Excerpt",
+      "publish": {
+        "section": "Details",
+        "placement": "main",
+        "multiline": true,
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "body": {
+      "type": "String",
+      "required": true,
+      "label": "Body",
+      "publish": {
+        "section": "Details",
+        "placement": "main",
+        "multiline": true,
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      }
+    },
+    "category": {
+      "type": "Reference",
+      "required": false,
+      "label": "Category",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      },
+      "settings": {
+        "collection": "categories"
+      }
+    },
+    "sub-category": {
+      "type": "Reference",
+      "required": false,
+      "label": "Sub category",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      },
+      "settings": {
+        "collection": "sub-categories"
+      }
+    },
+    "web-service": {
+      "type": "Reference",
+      "required": false,
+      "label": "Web service",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      },
+      "settings": {
+        "collection": "web-services"
+      }
+    },
+    "network-service": {
+      "type": "Reference",
+      "required": false,
+      "label": "Network service",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      },
+      "settings": {
+        "collection": "network-services"
+      }
+    },
+    "publishedAt": {
+      "type": "DateTime",
+      "format": "unix",
+      "required": false,
+      "label": "Date & Time",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "status": {
+      "type": "Reference",
+      "required": false,
+      "label": "",
+      "publish": {
+        "section": "Details",
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      },
+      "settings": {
+        "collection": "status"
+      }
+    },
+    "mediumUrl": {
+      "type": "String",
+      "required": false,
+      "label": "Medium URL",
+      "publish": {
+        "section": "Meta",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      }
+    },
+    "twitterUrl": {
+      "type": "String",
+      "required": false,
+      "label": "Twitter URL",
+      "publish": {
+        "section": "Meta",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      }
+    },
+     "redditUrl": {
+      "type": "String",
+      "required": false,
+      "label": "Reddit URL",
+      "publish": {
+        "section": "Meta",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      }
+    },
+    "metaTitle": {
+      "type": "String",
+      "required": true,
+      "label": "Title",
+      "publish": {
+        "section": "Meta",
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      }
+    },
+    "metaDescription": {
+      "type": "String",
+      "required": false,
+      "label": "Description",
+      "publish": {
+        "section": "Meta",
+        "placement": "main",
+        "multiline": true,
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      }
+    },
+    "metaImage": {
+      "type": "Reference",
+      "settings": {
+        "collection": "mediaStore"
+      },
+      "required": false,
+      "label": "Image",
+      "publish": {
+        "section": "Meta",
+        "placement": "sidebar",
+        "subType": "Image",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      }
+    }
+  },
+  "settings": {
+    "displayName": "Articles",
+    "cache": false,
+    "count": 40,
+    "storeRevisions": false,
+    "description": "",
+    "compose": true,
+    "sort": "publishedAt",
+    "sortOrder": -1,
+    "index": [
+      {
+        "keys": {
+          "publishedAt": 1
+        }
+      },
+      {
+        "keys": {
+          "publishedAt": -1
+        }
+      }
+    ],
+    "hooks": {
+      "beforeCreate": [
+        {
+          "hook": "slugify",
+          "options": {
+            "from": "title",
+            "to": "slug"
+          }
+        }
+      ],
+      "beforeUpdate": [
+        {
+          "hook": "slugify",
+          "options": {
+            "from": "title",
+            "to": "slug"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "new-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dadi/api": "^4.0.2",
+    "@dadi/api-filestore": "latest",
+    "entities": "^1.1.1",
+    "remark": "^6.2.0",
+    "slugify": "^1.3.0",
+    "strip-markdown": "^3.0.0"
+  }
+}
