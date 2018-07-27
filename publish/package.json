@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@dadi/publish": "dadi/publish#master"
+    "@dadi/publish": "dadi/publish#@@BRANCH@@"
   }
 }

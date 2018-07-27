@@ -42,20 +42,6 @@
         "collection": "team"
       }
     },
-    "publishedAt": {
-      "type": "DateTime",
-      "format": "unix",
-      "required": false,
-      "label": "Date & Time",
-      "publish": {
-        "section": "Details",
-        "placement": "sidebar",
-        "display": {
-          "edit": true,
-          "list": true
-        }
-      }
-    },
     "published": {
       "type": "Boolean",
       "required": false,
@@ -161,6 +147,20 @@
         "collection": "network-services"
       }
     },
+    "publishedAt": {
+      "type": "DateTime",
+      "format": "unix",
+      "required": false,
+      "label": "Date & Time",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
     "status": {
       "type": "Reference",
       "required": false,
@@ -218,7 +218,7 @@
     },
     "metaTitle": {
       "type": "String",
-      "required": false,
+      "required": true,
       "label": "Title",
       "publish": {
         "section": "Meta",
