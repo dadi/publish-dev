@@ -49,7 +49,7 @@
     "extension": "log"
   },
   "feedback": false,
-  "query": {
-    "useVersionFilter": true
+  "i18n": {
+    "languages": ["pt", "fr", "es"]
   }
 }
