@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@dadi/api": "latest",
+    "@dadi/api": "^4.3.0",
     "@dadi/api-filestore": "latest",
     "entities": "^1.1.1",
     "remark": "^6.2.0",
