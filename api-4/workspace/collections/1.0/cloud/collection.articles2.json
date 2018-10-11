@@ -1,0 +1,130 @@
+{
+    "fields": {
+      "name": {
+        "type": "String",
+        "required": true,
+        "label": "Name of the stuff",
+        "publish": {
+          "section": "Details",
+          "placement": "main",
+          "display": {
+            "edit": true,
+            "list": true
+          }
+        }
+      },
+      "price": {
+        "type": "String",
+        "required": true,
+        "label": "Price of the stuff",
+        "publish": {
+          "section": "Details",
+          "placement": "main",
+          "display": {
+            "edit": true,
+            "list": true
+          }
+        }
+      },
+      "location": {
+        "type": "String",
+        "required": true,
+        "label": "Where to buy the stuff",
+        "publish": {
+          "section": "Details",
+          "placement": "main",
+          "multiline": true,
+          "display": {
+            "edit": true,
+            "list": true
+          }
+        }
+      },
+      "description": {
+        "type": "String",
+        "required": true,
+        "label": "All about the stuff",
+        "publish": {
+          "section": "Details",
+          "placement": "main",
+          "multiline": true,
+          "display": {
+            "edit": true,
+            "list": true
+          }
+        }
+      },
+      "fullHeight": {
+        "type": "String",
+        "required": true,
+        "label": "Full height field",
+        "publish": {
+          "section": "Details",
+          "placement": "main",
+          "multiline": true,
+          "heightType": "full",
+          "display": {
+            "edit": true,
+            "list": true
+          }
+        }
+      },
+      "contentHeightField": {
+        "type": "String",
+        "required": true,
+        "label": "Content height field",
+        "publish": {
+          "section": "Details",
+          "placement": "main",
+          "multiline": true,
+          "heightType": "content",
+          "display": {
+            "edit": true,
+            "list": true
+          }
+        }
+      },
+      "staticHeightField": {
+        "type": "String",
+        "required": true,
+        "label": "Static height field",
+        "publish": {
+          "section": "Details",
+          "placement": "main",
+          "multiline": true,
+          "heightType": "static",
+          "rows": 3,
+          "display": {
+            "edit": true,
+            "list": true
+          }
+        }
+      },
+      "staticResizableHeightField": {
+        "type": "String",
+        "required": true,
+        "label": "Static resizable height field",
+        "publish": {
+          "section": "Details",
+          "placement": "main",
+          "multiline": true,
+          "heightType": "static",
+          "rows": 3,
+          "resizable": true,
+          "display": {
+            "edit": true,
+            "list": true
+          }
+        }
+      }
+    },
+    "settings": {
+      "displayName": "Stuff",
+      "cache": false,
+      "count": 40,
+      "sort": "name",
+      "sortOrder": 1,
+      "storeRevisions": false,
+      "description": "Some stuff"
+    }
+  }

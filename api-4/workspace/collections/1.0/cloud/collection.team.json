@@ -141,7 +141,7 @@
   "settings": {
     "displayName": "Team",
     "cache": false,
-    "count": 40,
+    "count": 5,
     "compose": true,
     "sort": "order",
     "sortOrder": 1,
