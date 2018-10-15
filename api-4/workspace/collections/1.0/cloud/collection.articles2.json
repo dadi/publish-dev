@@ -116,7 +116,51 @@
             "list": true
           }
         }
-      }
+      },
+      "current_status": {
+        "type": "String",
+        "label": "Current Status",
+        "required": false,
+        "default": "inactive",
+        "publish": {
+          "section": "Brief Overview",
+          "placement": "sidebar",
+          "display": {
+            "list": true,
+            "edit": true
+          },
+          "options": [
+            {
+              "value": "inactive",
+              "label": "Not Yet Active"
+            },
+            {
+              "value": "awaiting_assignment",
+              "label": "Awaiting Assignment"
+            },          
+            {
+              "value": "in_progress",
+              "label": "In Progress"
+            },
+            {
+              "value": "editor_review",
+              "label": "Under Editor Review"
+            },
+            {
+              "value": "client_review",
+              "label": "Under Client Review"
+            },
+            {
+              "value": "approved",
+              "label": "Approved"
+            },
+            {
+              "value": "archived",
+              "label": "Archived"
+            }
+          ]
+        }
+      }      
     },
     "settings": {
       "displayName": "Stuff",
