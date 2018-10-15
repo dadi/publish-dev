@@ -113,7 +113,8 @@
         "display": {
           "edit": true,
           "list": true
-        }
+        },
+        "readonly": true
       },
       "settings": {
         "collection": "categories"
