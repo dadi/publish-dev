@@ -113,13 +113,30 @@
         "display": {
           "edit": true,
           "list": true
+        }
+      },
+      "settings": {
+        "collection": "categories"
+      }
+    },
+    "readOnlyCategory": {
+      "type": "Reference",
+      "required": false,
+      "label": "Read-only Category",
+      "comment": "This field exists to demonstrate the readonly parameter",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
         },
         "readonly": true
       },
       "settings": {
         "collection": "categories"
       }
-    },
+    },    
     "sub-category": {
       "type": "Reference",
       "required": false,
