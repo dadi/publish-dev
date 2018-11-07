@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@dadi/api": "^4.3.0",
-    "@dadi/api-filestore": "latest",
+    "@dadi/api": "dadi/api#develop",
+    "@dadi/api-filestore": "^0.11.0",
     "entities": "^1.1.1",
     "remark": "^6.2.0",
     "slugify": "^1.3.0",
