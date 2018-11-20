@@ -44,6 +44,27 @@
         }
       }
     },
+    "jobDescription": {
+      "type": "Reference",
+      "label": "Job description",
+      "message": "",
+      "required": false,
+      "settings": {
+        "collection": "mediaStore"
+      },
+      "validation": {
+        "mimeTypes": ["application/pdf"]
+      },
+      "publish": {
+        "section": "Details",
+        "subType": "Media",
+        "placement": "sidebar",
+        "display": {
+          "list": true,
+          "edit": true
+        }
+      }
+    },
     "body": {
       "type": "String",
       "required": true,
@@ -124,6 +145,27 @@
         "display": {
           "edit": true,
           "list": true
+        }
+      }
+    },
+    "image": {
+      "type": "Reference",
+      "label": "Image",
+      "message": "jpg or png",
+      "validation": {
+        "mimeTypes": ["image/jpeg","image/jpg","image/png"]
+      },
+      "required": false,
+      "settings": {
+        "collection": "mediaStore"
+      },
+      "publish": {
+        "section": "Details",
+        "subType": "Image",
+        "placement": "sidebar",
+        "display": {
+          "list": false,
+          "edit": true
         }
       }
     },

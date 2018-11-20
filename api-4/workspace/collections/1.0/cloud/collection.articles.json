@@ -289,7 +289,7 @@
   "settings": {
     "displayName": "Articles",
     "cache": false,
-    "count": 40,
+    "count": 8,
     "storeRevisions": false,
     "description": "",
     "compose": true,

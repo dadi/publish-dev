@@ -163,6 +163,9 @@
       }      
     },
     "settings": {
+      "publish": {
+        "hidden": true
+      },
       "displayName": "Stuff",
       "cache": false,
       "count": 40,
