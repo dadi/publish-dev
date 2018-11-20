@@ -129,11 +129,12 @@
       "required": false,
       "label": "Colour",
       "publish": {
+        "subType": "Color",
         "section": "Details",
         "placement": "sidebar",
         "display": {
           "edit": true,
-          "list": false
+          "list": true
         }
       }
     },
