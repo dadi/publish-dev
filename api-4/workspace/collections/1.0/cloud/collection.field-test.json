@@ -122,7 +122,9 @@
         "placement": "sidebar"
       },
       "validation": {
-        "regex": "^(q|p)*$"
+        "regex": {
+          "pattern": "^(q|p)*$"
+        }
       }
     },
     "numberRequired": {
