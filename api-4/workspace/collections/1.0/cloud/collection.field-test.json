@@ -420,11 +420,7 @@
       "publish": {
         "subType": "Color",
         "section": "Publish fields",
-        "placement": "main",
-        "display": {
-          "edit": true,
-          "list": true
-        }
+        "placement": "main"
       }
     }
   },
