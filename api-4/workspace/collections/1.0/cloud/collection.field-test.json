@@ -348,6 +348,15 @@
         "collection": "mediaStore"
       }
     },
+    "mediaRequired": {
+      "type": "Media",
+      "label": "Media",
+      "required": true,
+      "publish": {
+        "section": "Reference and Media",
+        "placement": "main"
+      }
+    },
     "media": {
       "type": "Media",
       "label": "Media",
@@ -404,7 +413,20 @@
       "validation": {
         "mimeTypes": ["application/pdf"]
       }
-    }
+    },
+    "color": {
+      "type": "String",
+      "label": "Colour",
+      "publish": {
+        "subType": "Color",
+        "section": "Publish fields",
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
   },
   "settings": {
     "displayName": "Field Testing",
