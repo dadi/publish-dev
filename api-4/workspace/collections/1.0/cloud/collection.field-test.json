@@ -6,7 +6,10 @@
       "required": true,
       "publish": {
         "section": "Strings",
-        "placement": "main"
+        "placement": "main",
+        "display": {
+          "list": true
+        }
       }
     },
     "stringNoLabel": {

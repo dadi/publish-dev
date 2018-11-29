@@ -42,6 +42,7 @@
       "type": "String",
       "required": false,
       "label": "Description",
+      "format": "markdown",
       "publish": {
         "section": "Details",
         "placement": "main",
@@ -70,6 +71,7 @@
       "type": "String",
       "required": false,
       "label": "Features",
+      "format": "markdown",
       "publish": {
         "section": "Details",
         "placement": "main",
@@ -125,6 +127,20 @@
       }
     },
     "color": {
+      "type": "String",
+      "required": false,
+      "label": "Colour",
+      "publish": {
+        "subType": "Color",
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "color2": {
       "type": "String",
       "required": false,
       "label": "Colour",
