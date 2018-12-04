@@ -103,6 +103,20 @@
         "resizable": true
       }
     },
+    "source": {
+      "type": "String",
+      "required": false,
+      "label": "Source",
+      "publish": {
+        "section": "Details",
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "link": true,
+          "list": false
+        }
+      }
+    },
     "category": {
       "type": "Reference",
       "required": false,
