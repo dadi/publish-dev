@@ -14,10 +14,6 @@
       "port": 80,
       "version": "1.0",
       "database": "cloud",
-      "credentials": {
-        "clientId": "api-client",
-        "secret": "client-secret"
-      },
       "menu": [
         {
           "collections": [
