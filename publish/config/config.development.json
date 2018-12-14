@@ -10,10 +10,8 @@
   "apis": [
     {
       "name": "DADI Publish - Dev API",
-      "host": "http://publish-dev-api.eb.dev.dadi.technology",
+      "host": "http://publish-dev-api-4.eb.dev.dadi.technology",
       "port": 80,
-      "version": "1.0",
-      "database": "cloud",
       "menu": [
         {
           "collections": [
@@ -35,9 +33,6 @@
       ]
     }
   ],
-  "auth": {
-    "enabled": false
-  },
   "publicUrl": {
     "host": "publish-dev.eb.dev.dadi.technology",
     "port": 80,
