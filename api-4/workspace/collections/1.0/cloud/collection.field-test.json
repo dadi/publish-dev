@@ -154,11 +154,6 @@
             "label": "Option four"
           }
         ]
-      },
-      "validation": {
-        "regex": {
-          "pattern": "^(q|p)*$"
-        }
       }
     },
     "stringOptionsMultiple": {
@@ -186,11 +181,6 @@
           }
         ],
         "multiple": true
-      },
-      "validation": {
-        "regex": {
-          "pattern": "^(q|p)*$"
-        }
       }
     },
     "numberRequired": {
