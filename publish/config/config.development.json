@@ -15,10 +15,8 @@
       "menu": [
         {
           "collections": [
-            "images",
             "pages",
-            "team",
-            "partners"
+            "team"
           ],
           "title": "Content"
         },
@@ -29,6 +27,18 @@
             "milestones"
           ],
           "title": "Taxonomy"
+        },
+        {
+          "collections": [
+            "field-test-boolean",
+            "field-test-date",
+            "field-test-media",
+            "field-test-other",
+            "field-test-number",
+            "field-test-reference",
+            "field-test-string"
+          ],
+          "title": "Field Testing"
         }
       ]
     }
