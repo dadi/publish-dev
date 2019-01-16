@@ -51,7 +51,7 @@
         "placement": "sidebar"
       },
       "validation": {
-        "after": 1514764800
+        "after": 1514764800000
       }
     },
     "dateBefore": {
@@ -63,7 +63,7 @@
         "placement": "sidebar"
       },
       "validation": {
-        "before": 1514764800
+        "before": 1514764800000
       }
     }
   },
