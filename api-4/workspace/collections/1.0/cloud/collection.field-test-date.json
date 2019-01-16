@@ -46,13 +46,12 @@
       "type": "DateTime",
       "label": "A date after x",
       "comment": "Must be after 2018/01/01",
-      "format": "YYYY-MM-DD",
       "publish": {
         "section": "Dates",
         "placement": "sidebar"
       },
       "validation": {
-        "after": "2018/01/01"
+        "after": 1514764800
       }
     },
     "dateBefore": {
@@ -64,7 +63,7 @@
         "placement": "sidebar"
       },
       "validation": {
-        "before": "2018/01/01"
+        "before": 1514764800
       }
     }
   },
