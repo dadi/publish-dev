@@ -10,7 +10,7 @@
   "apis": [
     {
       "name": "DADI Publish - Dev API",
-      "host": "http://publish-dev-api-4.eb.dev.dadi.technology",
+      "host": "http://@@API_URL@@",
       "port": 80,
       "menu": [
         {
