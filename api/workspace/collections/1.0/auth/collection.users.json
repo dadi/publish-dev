@@ -217,6 +217,9 @@
     }
   },
   "settings": {
+    "publish": {
+      "hidden": true
+    },
     "compose": true,
     "cache": false,
     "authenticate": true,

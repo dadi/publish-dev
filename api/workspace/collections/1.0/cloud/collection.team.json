@@ -1,5 +1,23 @@
 {
   "fields": {
+    "image": {
+      "type": "Reference",
+      "label": "Image",
+      "message": "jpg or png",
+      "required": false,
+      "settings": {
+        "collection": "mediaStore"
+      },
+      "publish": {
+        "section": "Details",
+        "subType": "Image",
+        "placement": "sidebar",
+        "display": {
+          "list": true,
+          "edit": true
+        }
+      }
+    },
     "name": {
       "type": "String",
       "required": true,
@@ -23,6 +41,27 @@
         "display": {
           "edit": false,
           "list": false
+        }
+      }
+    },
+    "jobDescription": {
+      "type": "Reference",
+      "label": "Job description",
+      "message": "",
+      "required": false,
+      "settings": {
+        "collection": "mediaStore"
+      },
+      "validation": {
+        "mimeTypes": ["application/pdf"]
+      },
+      "publish": {
+        "section": "Details",
+        "subType": "Media",
+        "placement": "sidebar",
+        "display": {
+          "list": true,
+          "edit": true
         }
       }
     },
@@ -62,7 +101,8 @@
         "placement": "sidebar",
         "display": {
           "edit": true,
-          "list": true
+          "list": true,
+          "link": "https://twitter.com/{value}"
         }
       }
     },
@@ -75,7 +115,8 @@
         "placement": "sidebar",
         "display": {
           "edit": true,
-          "list": true
+          "list": true,
+          "link": "https://linkedin.com/in/{value}"
         }
       }
     },
@@ -88,7 +129,8 @@
         "placement": "sidebar",
         "display": {
           "edit": true,
-          "list": true
+          "list": true,
+          "link": true
         }
       }
     },
@@ -110,6 +152,9 @@
       "type": "Reference",
       "label": "Image",
       "message": "jpg or png",
+      "validation": {
+        "mimeTypes": ["image/jpeg","image/jpg","image/png"]
+      },
       "required": false,
       "settings": {
         "collection": "mediaStore"
@@ -141,7 +186,7 @@
   "settings": {
     "displayName": "Team",
     "cache": false,
-    "count": 40,
+    "count": 5,
     "compose": true,
     "sort": "order",
     "sortOrder": 1,

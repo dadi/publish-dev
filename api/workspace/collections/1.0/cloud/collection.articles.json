@@ -42,6 +42,20 @@
         "collection": "team"
       }
     },
+    "publishedAt": {
+      "type": "DateTime",
+      "format": "unix",
+      "required": false,
+      "label": "Date & Time",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
     "published": {
       "type": "Boolean",
       "required": false,
@@ -59,6 +73,7 @@
       "type": "String",
       "required": false,
       "label": "Excerpt",
+      "comment": "A short version of the article",
       "publish": {
         "section": "Details",
         "placement": "main",
@@ -66,19 +81,37 @@
         "display": {
           "edit": true,
           "list": true
-        }
+        },
+        "heightType": "content"
       }
     },
     "body": {
       "type": "String",
       "required": true,
       "label": "Body",
+      "format": "markdown",
       "publish": {
         "section": "Details",
         "placement": "main",
         "multiline": true,
         "display": {
           "edit": true,
+          "list": false
+        },
+        "heightType": "full",
+        "resizable": true
+      }
+    },
+    "source": {
+      "type": "String",
+      "required": false,
+      "label": "Source",
+      "publish": {
+        "section": "Details",
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "link": true,
           "list": false
         }
       }
@@ -92,23 +125,42 @@
         "placement": "sidebar",
         "display": {
           "edit": true,
-          "list": false
+          "list": true
         }
       },
       "settings": {
         "collection": "categories"
       }
     },
+    "readOnlyCategory": {
+      "type": "Reference",
+      "required": false,
+      "label": "Read-only Category",
+      "comment": "This field exists to demonstrate the readonly parameter",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        },
+        "readonly": true
+      },
+      "settings": {
+        "collection": "categories"
+      }
+    },    
     "sub-category": {
       "type": "Reference",
       "required": false,
+      "example": "Announcements",
       "label": "Sub category",
       "publish": {
         "section": "Details",
         "placement": "sidebar",
         "display": {
           "edit": true,
-          "list": false
+          "list": true
         }
       },
       "settings": {
@@ -145,20 +197,6 @@
       },
       "settings": {
         "collection": "network-services"
-      }
-    },
-    "publishedAt": {
-      "type": "DateTime",
-      "format": "unix",
-      "required": false,
-      "label": "Date & Time",
-      "publish": {
-        "section": "Details",
-        "placement": "sidebar",
-        "display": {
-          "edit": true,
-          "list": true
-        }
       }
     },
     "status": {
@@ -218,8 +256,8 @@
     },
     "metaTitle": {
       "type": "String",
-      "required": true,
-      "label": "Title",
+      "required": false,
+      "label": "metaTitle",
       "publish": {
         "section": "Meta",
         "placement": "main",
@@ -232,7 +270,7 @@
     "metaDescription": {
       "type": "String",
       "required": false,
-      "label": "Description",
+      "label": "metaDescription",
       "publish": {
         "section": "Meta",
         "placement": "main",
@@ -256,7 +294,7 @@
         "subType": "Image",
         "display": {
           "edit": true,
-          "list": false
+          "list": true
         }
       }
     }
@@ -264,7 +302,7 @@
   "settings": {
     "displayName": "Articles",
     "cache": false,
-    "count": 40,
+    "count": 8,
     "storeRevisions": false,
     "description": "",
     "compose": true,

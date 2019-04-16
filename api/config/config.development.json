@@ -4,13 +4,13 @@
     "name": "NEW API"
   },
   "publicUrl": {
-    "host": "publish-dev-api.eb.dev.dadi.technology",
+    "host": "publish-dev-api-4.eb.dev.dadi.technology",
     "port": 80,
     "protocol": "http"
   },
   "server": {
     "host": "0.0.0.0",
-    "port": 9998
+    "port": 9999
   },
   "datastore": "@dadi/api-filestore",
   "auth": {
@@ -49,8 +49,7 @@
     "extension": "log"
   },
   "feedback": false,
-  "cors": false,
-  "query": {
-    "useVersionFilter": true
+  "i18n": {
+    "languages": ["pt", "fr", "es"]
   }
 }
