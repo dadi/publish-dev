@@ -10,8 +10,8 @@
   "apis": [
     {
       "name": "DADI Publish - Dev API",
-      "host": "http://@@API_URL@@",
-      "port": 80,
+      "host": "https://@@API_URL@@",
+      "port": 443,
       "menu": [
         {
           "collections": [
