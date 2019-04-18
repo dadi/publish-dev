@@ -65,6 +65,26 @@
       "validation": {
         "before": 1514764800000
       }
+    },
+    "dateYYYYMMDD": {
+      "type": "DateTime",
+      "label": "A date with no time",
+      "comment": "Should be in format YYYY-MM-DD",
+      "format": "YYYY-MM-DD",
+      "publish": {
+        "section": "Dates",
+        "placement": "main"
+      }
+    },
+    "dateDDMMYYYY": {
+      "type": "DateTime",
+      "label": "A date with no time",
+      "comment": "Should be in format DD-MM-YYYY",
+      "format": "DD-MM-YYYY",
+      "publish": {
+        "section": "Dates",
+        "placement": "main"
+      }
     }
   },
   "settings": {
