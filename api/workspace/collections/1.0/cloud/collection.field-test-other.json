@@ -8,6 +8,13 @@
         "section": "Publish fields",
         "placement": "main"
       }
+    },
+    "object": {
+      "type": "Object",
+      "publish": {
+        "section": "Unsupported fields",
+        "placement": "main"
+      }
     }
   },
   "settings": {
