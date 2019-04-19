@@ -15,6 +15,11 @@
         "section": "Unsupported fields",
         "placement": "main"
       }
+    },
+    "string": {
+      "type": "String",
+      "label": "Normal String field",
+      "comment": "I am here just to allow filters to work"
     }
   },
   "settings": {
